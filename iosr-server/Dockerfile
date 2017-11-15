@@ -1,9 +1,6 @@
 FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ADD target/iosr-eureka-server-1.0.jar /app.jar
 
-#ADD target/lib /lib
-
-ARG JAR_FILE
-ADD target/${JAR_FILE} /app.jar
-
-ENV JAVA_OPTS=""
-ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar
+ENV JAVA_OPTS="-Xmx512M"
+CMD exec java $JAVA_OPTS -Dserver.port=$PORT -Djava.security.egd=file:/dev/./urandom -jar /app.jar
