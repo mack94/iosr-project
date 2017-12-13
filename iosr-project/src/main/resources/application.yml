@@ -6,4 +6,4 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_URI:http://iosr-server.herokuapp.com/eureka}
   instance:
-    prefer-ip-address: false
+    prefer-ip-address: true
