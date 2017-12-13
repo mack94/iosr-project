@@ -1,11 +1,11 @@
 version: '3'
 services:
   loadbalancer:
-    image: "iosr-loadbalancer"
+    build: iosr-loadbalancer
     ports:
       - "8765:8765"
   eureka:
-    image: "iosr-server"
+    build: iosr-server
   project:
-    image: "iosr-project"
+    build: iosr-project
 
