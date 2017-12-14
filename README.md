@@ -1,16 +1,20 @@
 # Build instructions
 
-1. If necessary update git submodules with
+1. If necessary initialize git submodules with
    ```
    git submodule update --init --recursive
    ```
-2. Build applications with included script
+2. Update git submodules
+   ```
+   git submodule update --recursive --remote
+   ```
+3. Build applications with included script
    ```
    ./build-images.sh
    ```
 
    or manually execute commands from within the file.
-3. Fire compose
+4. Fire compose
    ```
    sudo docker-compose build
    sudo docker-compose up
