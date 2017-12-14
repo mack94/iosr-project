@@ -8,4 +8,8 @@ services:
     build: iosr-server
   project:
     build: iosr-project
+  client:
+    build: iosr-es6-client
+    ports:
+      - "9000:9000"
 

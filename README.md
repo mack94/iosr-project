@@ -9,19 +9,17 @@
    ./build-images.sh
    ```
 
-   or manually with
-
-   ```
-   mvn package
-   ```
+   or manually execute commands from within the file.
 3. Fire compose
    ```
+   sudo docker-compose build
    sudo docker-compose up
    ```
 
 # Environment
 
 * Zuul should be available on port :8765 of local machine
+* ES6 client should be available on port :9000 of local machine
 * To inspect components use
    ```
    sudo docker network ls
