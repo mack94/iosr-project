@@ -1,0 +1,15 @@
+version: '3'
+services:
+  loadbalancer:
+    build: iosr-loadbalancer
+    ports:
+      - "8765:8765"
+  eureka:
+    build: iosr-server
+  project:
+    build: iosr-project
+  client:
+    build: iosr-es6-client
+    ports:
+      - "9000:9000"
+

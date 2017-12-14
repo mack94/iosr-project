@@ -1,0 +1,6 @@
+[submodule "iosr-es6-client"]
+	path = iosr-es6-client
+	url = https://github.com/lajonss/iosr-es6-client
+[submodule "iosr-loadbalancer"]
+	path = iosr-loadbalancer
+	url = https://github.com/lajonss/iosr-loadbalancer
