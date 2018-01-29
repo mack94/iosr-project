@@ -8,4 +8,6 @@ services:
     build: iosr-server
   project:
     build: iosr-project
+  manipulator:
+    build: iosr-manipulation-service
 
