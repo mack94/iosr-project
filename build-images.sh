@@ -4,3 +4,5 @@ cd ../iosr-project
 mvn package
 cd ../iosr-server
 mvn package
+cd ../iosr-manipulation-service
+mvn package

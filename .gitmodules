@@ -4,3 +4,6 @@
 [submodule "iosr-loadbalancer"]
 	path = iosr-loadbalancer
 	url = https://github.com/lajonss/iosr-loadbalancer
+[submodule "iosr-manipulation-service"]
+	path = iosr-manipulation-service
+	url = https://github.com/lajonss/iosr-manipulation-service
