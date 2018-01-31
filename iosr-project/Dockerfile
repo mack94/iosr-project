@@ -7,7 +7,7 @@ EXPOSE 1234
 
 ENV PASSWORD="andrzej9000"
 
-ENV JAVA_OPTS="-Xmx512M"
+ENV JAVA_OPTS="-Xmx256M"
 ENV EUREKA_URI="http://eureka:8761/eureka/"
 #ENV EUREKA_OPTS="-Deureka.instance.securePort=443 -Deureka.instance.nonSecurePort=80"
 #-Deureka.instance.hostname=$HOST_NAME 
