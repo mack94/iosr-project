@@ -7,4 +7,4 @@ mvn package
 cd ../iosr-manipulation-service
 mvn package
 cd ..
-sudo docker-compose up --build
+docker-compose up --build
