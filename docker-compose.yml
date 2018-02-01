@@ -4,10 +4,13 @@ services:
     build: iosr-loadbalancer
     ports:
       - "8765:8765"
+    restart: always
   eureka:
     build: iosr-server
+    restart: always
   project:
     build: iosr-project
+    restart: always
   manipulator:
     build: iosr-manipulation-service
-
+    restart: always
